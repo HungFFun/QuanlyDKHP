@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.10.0.final using JasperReports Library version 6.10.0-unknown  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="DanhSachMonHoc" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="69bbe0ba-d4bc-4d24-9451-22b9745164f9">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="DKHPSQL"/>
+	<queryString language="SQL">
+		<![CDATA[select [MaMH],[TenMonHoc],[SoTinChi]
+from [dbo].[MonHoc]
+ORDER BY [MaMH]]]>
+	</queryString>
+	<field name="MaMH" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="MaMH"/>
+	</field>
+	<field name="TenMonHoc" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="TenMonHoc"/>
+	</field>
+	<field name="SoTinChi" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="SoTinChi"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="156" splitType="Stretch">
+			<staticText>
+				<reportElement x="137" y="0" width="280" height="30" uuid="f7bd4e5e-ea56-438f-9c83-8b99cab7b385"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Trường Đại học Công nghiệpTP HCM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="190" y="100" width="169" height="30" forecolor="#F2120F" uuid="f157d9a8-2963-4edc-af68-db0e53d4652f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[Danh Sách Môn Học]]></text>
+			</staticText>
+			<image isLazy="true">
+				<reportElement x="220" y="40" width="120" height="50" uuid="5af31057-0606-44dc-8e56-7f44c1373321"/>
+				<imageExpression><![CDATA["images/logo.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="39" splitType="Stretch">
+			<rectangle>
+				<reportElement x="50" y="0" width="430" height="39" uuid="89ce1dfa-cf36-4aeb-b4e4-bbe5782fb0ef"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="50" y="1" width="130" height="38" uuid="fe8fb863-d829-43f4-b226-40bcc8b3a65d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5c7dc705-b70d-4fe2-b36e-c24ee562dddd"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Mã Môn Học]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="180" y="0" width="200" height="39" uuid="b3a07874-78af-4863-b600-30b9373d4f89">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="581861e3-f123-4ecb-bb6e-7850ac6079d7"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="html">
+					<font size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tên Môn Học]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="380" y="0" width="100" height="39" uuid="a5463fcb-cd17-4b48-bf16-5742b6c57d61">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c987c3c6-ea37-49f9-9675-87a4095aeda9"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Số Tín Chỉ]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="41" splitType="Stretch">
+			<rectangle>
+				<reportElement x="50" y="0" width="430" height="40" uuid="a13020c2-e411-4d92-b62f-5e99fb7d1af6"/>
+			</rectangle>
+			<textField>
+				<reportElement x="50" y="0" width="130" height="40" uuid="7013e16e-4c58-4b45-ae53-c3e5e7c8b6d9">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5c7dc705-b70d-4fe2-b36e-c24ee562dddd"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{MaMH}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="0" width="200" height="40" uuid="72ac5d19-6a1b-4ab4-8e2f-0e942162bd57">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="581861e3-f123-4ecb-bb6e-7850ac6079d7"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{TenMonHoc}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="0" width="100" height="40" uuid="eb0f3ed5-f0d5-48b4-aa3c-2d3b14f28cb7">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c987c3c6-ea37-49f9-9675-87a4095aeda9"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{SoTinChi}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="8" splitType="Stretch"/>
+	</columnFooter>
+	<summary>
+		<band height="60" splitType="Stretch">
+			<staticText>
+				<reportElement x="307" y="22" width="52" height="30" uuid="281f5311-ba90-4634-8e03-301296b3ad9b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Ngày]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="380" y="22" width="50" height="30" uuid="5f81b4f6-d953-414e-b50f-9b5a0b98e25d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Tháng]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="460" y="22" width="60" height="30" uuid="68e94758-01d7-4e36-a9b0-6be348dd0dc2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Năm]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/QuanLyDKHP_v2/sqljdbc4.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="jcalendar-1.4.jar"/>
+	<classpathentry kind="lib" path="jgoodies-looks-2.4.1.jar"/>
+	<classpathentry exported="true" kind="con" path="net.sf.jasperreports.JR_CONTAINER"/>
+	<classpathentry exported="true" kind="con" path="com.jaspersoft.server.JRS_CONTAINER"/>
+	<classpathentry kind="lib" path="D:/QuanLyDKHP_v2/lib/com.lowagie.text-2.1.7.jar"/>
+	<classpathentry kind="lib" path="D:/QuanLyDKHP_v2/lib/commons-beanutils-1.9.0.jar"/>
+	<classpathentry kind="lib" path="D:/QuanLyDKHP_v2/lib/commons-collections-3.2.2.jar"/>
+	<classpathentry kind="lib" path="D:/QuanLyDKHP_v2/lib/commons-collections4-4.0.jar"/>
+	<classpathentry kind="lib" path="D:/QuanLyDKHP_v2/lib/commons-digester-2.1.jar"/>
+	<classpathentry kind="lib" path="D:/QuanLyDKHP_v2/lib/commons-lang-2.6.jar"/>
+	<classpathentry kind="lib" path="D:/QuanLyDKHP_v2/lib/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="D:/QuanLyDKHP_v2/lib/groovy-all-2.4.7.jar"/>
+	<classpathentry kind="lib" path="D:/QuanLyDKHP_v2/lib/itext-2.1.7.js5.jar"/>
+	<classpathentry kind="lib" path="D:/QuanLyDKHP_v2/lib/itextpdf-5.5.8.jar"/>
+	<classpathentry kind="lib" path="D:/QuanLyDKHP_v2/lib/itext-pdfa-5.5.8.jar"/>
+	<classpathentry kind="lib" path="D:/QuanLyDKHP_v2/lib/jcommon-1.0.23.jar"/>
+	<classpathentry kind="lib" path="D:/QuanLyDKHP_v2/lib/joda-time-2.0.jar"/>
+	<classpathentry kind="lib" path="D:/QuanLyDKHP_v2/lib/org.springframework.core-3.0.6.release.jar"/>
+	<classpathentry kind="lib" path="D:/QuanLyDKHP_v2/lib/poi-3.9.jar"/>
+	<classpathentry kind="lib" path="D:/QuanLyDKHP_v2/lib/spring-beans-3.0.6.RELEASE.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
